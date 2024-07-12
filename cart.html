@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <!-- cart -->
-    <div id="cart">
-        <div class="container">
-            <h1>Shopping Cart</h1>
+     <article id ="cart"> 
+        <div id="cart-div">
+        <div class="container-cart">
+            <h1 class="cart-h1">Shopping Cart</h1>
+            
             <div class="products">
                 <div class="product">
                     <img src="product1.jpg" alt="Product 1">
-                    <h2>Product 1</h2>
-                    <p>$10.00</p>
-                    <button class="add-to-cart" onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+                    <h2 class="cart-h2">Product 1</h2>
+                    <p class="cart-p">$10.00</p>
+                    <a class="add-to-cart" onclick="addToCart('Product 1', 10.00)">Add to Cart</a>
                 </div>
                 <!-- Add more product divs as needed -->
             </div>
             <div class="cart">
-                <h2>Cart</h2>
+                <h2 class="cart-h2">Cart</h2>
                 <ul id="cart-items">
                     <!-- Cart items will be dynamically added here -->
                 </ul>
-                <p>Total: $<span id="cart-total">0.00</span></p>
+                <p class="cart-p">Total: $<span id="cart-total">0.00</span></p>
             </div>
         </div>
         <script src="script.js"></script>
     </div>
+    </article>
 </body>
 </html>
